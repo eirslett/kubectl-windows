@@ -10,11 +10,11 @@ I've built a binary for you. It's commited into this repository. It's called kub
 
 #### Configuring kubectl to use a remote kubernetes cluster
 
-1) cd C:\users\yourusername (Or wherever your %HOME% directory is)
-2) mkdir .kube
-3) cd .kube
-4) touch config
-5) Edit the config file with your editor of choice - notepad for example.
+1. cd C:\users\yourusername (Or wherever your %HOME% directory is)
+2. mkdir .kube
+3. cd .kube
+4. touch config
+5. Edit the config file with your editor of choice - notepad for example.
 
 It could for example look like this:
 
@@ -44,14 +44,13 @@ users:
 
 You can also try to build it yourself:
 
-1) [Set up a Go environment](https://golang.org/doc/install)
-Let's assume your GOPATH is at C:\gopath.
-2) mkdir C:\gopath\src\k8s.io
-3) cd C:\gopath\src\k8s.io
-4) git clone https://github.com/kubernetes/kubernetes
-5) Install prerequisites: Amongst them: Godep (for dependency management), mercurial (for fetching some dependencies) ...
-6) cd C:\gopath\src\k82.io\kubernetes\Godeps
-7) godep restore (to fetch dependencies. If some dependencies fail, it might work anyways)
-8) cd C:\gopath\src\k8s.io\kubernetes\cmd\kubectl
-9) go install .
-10) The kubectl binary should now be at C:\gopath\bin\kubectl.exe
+1. [Set up a Go environment](https://golang.org/doc/install). Let's assume your GOPATH is at C:\gopath.
+2. mkdir C:\gopath\src\k8s.io
+3. cd C:\gopath\src\k8s.io
+4. git clone https://github.com/kubernetes/kubernetes
+5. Install prerequisites: Amongst them: Godep (for dependency management), mercurial (for fetching some dependencies) ...
+6. cd C:\gopath\src\k82.io\kubernetes\Godeps
+7. godep restore (to fetch dependencies. If some dependencies fail, it might work anyways)
+8. cd C:\gopath\src\k8s.io\kubernetes\cmd\kubectl
+9. go install .
+10. The kubectl binary should now be at C:\gopath\bin\kubectl.exe
