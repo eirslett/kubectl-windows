@@ -2,7 +2,7 @@
 
 ### Why??
 
-It's nice to be able to run kubectl remotely against a kubernetes cluster. Then, you don't have to ssh into the servers to run commands. (Also, you won't need to run kubectl from a Linux VM, which is what other people suggest.) You'll probably need commands like mkdir (provided through cygwin or a standard git installation with cygwin binaries included).
+It's nice to be able to run kubectl remotely against a kubernetes cluster. Then, you don't have to ssh into the servers to run commands. (Also, you won't need to run kubectl from a Linux VM, which is what other people suggest.) You'll probably need commands like mkdir (provided through cygwin or a standard git installation with cygwin binaries included). But you might also be able to use the pre-built binary without these tools. (I'm not sure, really)
 
 ## Download a pre-built Windows binary
 
