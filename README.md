@@ -44,13 +44,13 @@ users:
 
 You can also try to build it yourself:
 
-1. [Set up a Go environment](https://golang.org/doc/install). Let's assume your GOPATH is at C:\gopath.
-2. mkdir C:\gopath\src\k8s.io
-3. cd C:\gopath\src\k8s.io
-4. git clone https://github.com/kubernetes/kubernetes
-5. Install prerequisites: Amongst them: Godep (for dependency management), mercurial (for fetching some dependencies) ...
-6. cd C:\gopath\src\k82.io\kubernetes\Godeps
-7. godep restore (to fetch dependencies. If some dependencies fail, it might work anyways)
-8. cd C:\gopath\src\k8s.io\kubernetes\cmd\kubectl
-9. go install .
-10. The kubectl binary should now be at C:\gopath\bin\kubectl.exe
+1. [Set up a Go environment](https://golang.org/doc/install).
+1. Set your GOPATH environment variable.  For these instructions we will use C:\gopath but %USERPROFILE%\go is more common.
+1. Add %GOPATH\bin to your PATH environment variable (exes like godep will be placed here and kubectl by the end of the install process)
+1. Make a directory to clone kubernetes: `mkdir C:\gopath\src\k8s.io` then `cd C:\gopath\src\k8s.io`
+1. [View release tags](https://github.com/kubernetes/kubernetes/releases) and choose the release you wish to build (like v1.5.0)
+1. Checkout kubernetes using the release tag you choose -- we're using v1.5.0 in this example: `git clone --depth 1 https://github.com/kubernetes/kubernetes v1.5.0` 
+1. Install [Godep](https://github.com/tools/godep) (for dependency management) and [mercurial](https://www.mercurial-scm.org/downloads) (for fetching some dependencies)
+1. Fetch GO dependencies: `cd C:\gopath\src\k82.io\kubernetes\` then `godep restore` (If some dependencies fail, it might work anyways.  Note this may take awhile - up to 10 min)
+1. Build kubectl `cd C:\gopath\src\k8s.io\kubernetes\cmd\kubectl` then `go install .` (Note this may take awhile - up to 10 min)
+1. The kubectl binary should now be at C:\gopath\bin\kubectl.exe
