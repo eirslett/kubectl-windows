@@ -6,7 +6,7 @@ It's nice to be able to run kubectl remotely against a kubernetes cluster. Then,
 
 ## Download a pre-built Windows binary
 
-I've built a binary for you. It's commited into this repository. It's called kubectl-1.1.3.exe. You can [download it](https://github.com/eirslett/kubectl-windows/raw/master/kubectl-1.1.3.exe) and put it somewhere in your PATH. (I suggest that you rename it to kubectl.exe)
+See [releases](https://github.com/eirslett/kubectl-windows/releases), download kubectl.exe, and put kubectl.exe somewhere in your PATH.
 
 #### Configuring kubectl to use a remote kubernetes cluster
 
