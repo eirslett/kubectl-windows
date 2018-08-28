@@ -1,3 +1,7 @@
+# Project archived
+
+Kubernetes [distributes its own kubectl binaries](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-binary-using-curl) for Windows now. You should use them instead.
+
 # Running kubectl on Windows
 
 ### Why??
